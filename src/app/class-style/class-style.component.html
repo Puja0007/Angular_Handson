@@ -1,0 +1,15 @@
+<p>class-style works!</p>
+
+<input type="text" [(ngModel)]="Name">
+<button (click)="changeValue()">Show</button>
+<div>{{Name}}</div>
+<div #heading>
+    <h1>Velotio Interview</h1>
+</div>
+
+<div *ngIf="show; else elseblock">I am in Hydearbad</div>
+<ng-content></ng-content>
+<ng-template #elseblock>
+I am in Velotio
+</ng-template>
+<div (click)="changeBgColor('red')">Hi I am in Techmojo</div>
